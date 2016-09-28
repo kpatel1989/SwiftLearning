@@ -25,19 +25,3 @@ for stock in stocks {
     stock.display()
     print("\n")
 }
-
-
-//var percentage = Int(readLine()!)!
-//switch percentage {
-//case let per where per > 100:
-//    print("Per")
-//case 90...100:
-//        print("Grade A")
-//case 80...89:
-//        print("Grade B")
-//case 70...79:
-//        print("Grade C")
-//        break;
-//default:
-//    print("Grade E")
-//}
