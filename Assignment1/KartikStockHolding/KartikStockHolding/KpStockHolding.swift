@@ -8,7 +8,7 @@
 
 import Cocoa
 
-public class KartikStockHolding: NSObject {
+public class KpStockHolding: NSObject {
 
     private(set) var purchaseSharePrice:Float
     private(set) var currentSharePrice:Float
@@ -32,8 +32,14 @@ public class KartikStockHolding: NSObject {
     
     func display() {
         print("Company Name : \(companyName)")
-        print("Current Share Price : \(currentSharePrice)")
-        print("Purchase Share Price: \(purchaseSharePrice)")
+        let numberFormatter = NSNumberFormatter()
+        numberFormatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle
+        numberFormatter.currencySymbol = "$"
+        
+        print("Current Share Price : \(numberFormatter.stringFromNumber(currentSharePrice)!)")
+        print("Purchase Share Price: \(numberFormatter.stringFromNumber(purchaseSharePrice)!)")
         print("Number of shares purchased: \(numberOfShares)")
+        print("Cost in Dollars : \(numberFormatter.stringFromNumber(costInDollars())!)")
+        print("Value in Dollars : \(numberFormatter.stringFromNumber(valueInDollars())!)")
     }
 }

@@ -8,17 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		462B7A6A1D9BE8A00087E416 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462B7A691D9BE8A00087E416 /* main.swift */; };
-		462B7A711D9BE8E90087E416 /* KartikStockHolding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462B7A701D9BE8E90087E416 /* KartikStockHolding.swift */; };
+		46EACD381D9C112000090D16 /* KpForeignStockHolding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EACD361D9C112000090D16 /* KpForeignStockHolding.swift */; };
+		46EACD391D9C112000090D16 /* KpStockHolding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EACD371D9C112000090D16 /* KpStockHolding.swift */; };
+		46EACD3B1D9C201600090D16 /* newMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EACD3A1D9C201600090D16 /* newMain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		462B7A641D9BE8A00087E416 /* CopyFiles */ = {
+		462B7A641D9BE8A00087E416 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -26,7 +29,9 @@
 /* Begin PBXFileReference section */
 		462B7A661D9BE8A00087E416 /* KartikStockHolding */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KartikStockHolding; sourceTree = BUILT_PRODUCTS_DIR; };
 		462B7A691D9BE8A00087E416 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		462B7A701D9BE8E90087E416 /* KartikStockHolding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KartikStockHolding.swift; sourceTree = "<group>"; };
+		46EACD361D9C112000090D16 /* KpForeignStockHolding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KpForeignStockHolding.swift; sourceTree = "<group>"; };
+		46EACD371D9C112000090D16 /* KpStockHolding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KpStockHolding.swift; sourceTree = "<group>"; };
+		46EACD3A1D9C201600090D16 /* newMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newMain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +64,10 @@
 		462B7A681D9BE8A00087E416 /* KartikStockHolding */ = {
 			isa = PBXGroup;
 			children = (
+				46EACD361D9C112000090D16 /* KpForeignStockHolding.swift */,
+				46EACD371D9C112000090D16 /* KpStockHolding.swift */,
 				462B7A691D9BE8A00087E416 /* main.swift */,
-				462B7A701D9BE8E90087E416 /* KartikStockHolding.swift */,
+				46EACD3A1D9C201600090D16 /* newMain.swift */,
 			);
 			path = KartikStockHolding;
 			sourceTree = "<group>";
@@ -74,7 +81,7 @@
 			buildPhases = (
 				462B7A621D9BE8A00087E416 /* Sources */,
 				462B7A631D9BE8A00087E416 /* Frameworks */,
-				462B7A641D9BE8A00087E416 /* CopyFiles */,
+				462B7A641D9BE8A00087E416 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -122,8 +129,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				462B7A711D9BE8E90087E416 /* KartikStockHolding.swift in Sources */,
+				46EACD381D9C112000090D16 /* KpForeignStockHolding.swift in Sources */,
+				46EACD391D9C112000090D16 /* KpStockHolding.swift in Sources */,
 				462B7A6A1D9BE8A00087E416 /* main.swift in Sources */,
+				46EACD3B1D9C201600090D16 /* newMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +252,7 @@
 				462B7A6F1D9BE8A00087E416 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
