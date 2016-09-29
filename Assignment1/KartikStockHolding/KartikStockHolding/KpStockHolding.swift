@@ -32,14 +32,13 @@ public class KpStockHolding: NSObject {
     
     func display() {
         print("Company Name : \(companyName)")
-        let numberFormatter = NSNumberFormatter()
-        numberFormatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = NumberFormatter.Style.currency
         numberFormatter.currencySymbol = "$"
-        
-        print("Current Share Price : \(numberFormatter.stringFromNumber(currentSharePrice)!)")
-        print("Purchase Share Price: \(numberFormatter.stringFromNumber(purchaseSharePrice)!)")
+        print("Current Share Price : \(numberFormatter.string(for:  currentSharePrice)!)")
+        print("Purchase Share Price: \(numberFormatter.string(for: purchaseSharePrice)!)")
         print("Number of shares purchased: \(numberOfShares)")
-        print("Cost in Dollars : \(numberFormatter.stringFromNumber(costInDollars())!)")
-        print("Value in Dollars : \(numberFormatter.stringFromNumber(valueInDollars())!)")
+        print("Cost in Dollars : \(numberFormatter.string(for: costInDollars())!)")
+        print("Value in Dollars : \(numberFormatter.string(for: valueInDollars())!)")
     }
 }
