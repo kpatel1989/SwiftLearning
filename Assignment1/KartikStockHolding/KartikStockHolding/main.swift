@@ -76,6 +76,11 @@ func menu() {
         print("7. Exit")
         print("Choose an option:")
         option = Int(readLine()!)!
-        
+        switch option {
+        case <#pattern#>:
+            <#code#>
+        default:
+            <#code#>
+        }
     }
 }
