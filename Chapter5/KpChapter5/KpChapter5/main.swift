@@ -9,6 +9,7 @@
 import Foundation
 
 print("Simple Dice game")
+var x = 10
 
 enum GameStatuses {
     case Win,Lost,Continue
@@ -28,7 +29,7 @@ func rollDice() -> (diceValue1: Int, diceValue2: Int) {
     return  (dice1, dice2)
 }
 
-func printDiceValues(roll: (diceValue1:Int, diceValue2:Int)) {
+func printDiceValues(_ roll: (diceValue1:Int, diceValue2:Int)) {
     print("Dice-1 : \(roll.diceValue1)")
     print("Dice-2 : \(roll.diceValue2)")
     print("Sum : \(roll.diceValue1 + roll.diceValue2)")
@@ -38,7 +39,7 @@ var option:GameStatuses = GameStatuses.Continue
 var myPoint = 0
 print("Rolling Dice......");
 var diceValues = rollDice()
-printDiceValues(roll: diceValues)
+printDiceValues(diceValues)
 
 switch (diceValues.diceValue1 + diceValues.diceValue2) {
 case SpecialValues.Two.rawValue,SpecialValues.Three.rawValue,SpecialValues.Twelve.rawValue:
@@ -57,7 +58,7 @@ default:
 while option == GameStatuses.Continue {
     print("Rolling Dice......");
     var diceValues = rollDice()
-    printDiceValues(roll: diceValues)
+    printDiceValues(diceValues)
     if myPoint == diceValues.diceValue1 + diceValues.diceValue2 {
         option = GameStatuses.Win
     } else if diceValues.diceValue1 + diceValues.diceValue2 == 7 {

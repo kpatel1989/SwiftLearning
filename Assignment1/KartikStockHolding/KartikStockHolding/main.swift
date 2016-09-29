@@ -39,12 +39,47 @@ for stock in stocks {
     print("\n")
 }
 
+print("Assignment 3")
+
+var companies = [KpStockHolding]()
+
+func displayStockInformationForLowestValues() {
+    print("Display stock information with the lowest value")
+}
+
+func displayStockWithHighestvalue() {
+    print("Display stock with the highest value")
+}
+
+func displayMostProfitableStock() {
+    print("Display stock information with the lowest value")
+}
+
+func displayLeastProfitableStock() {
+    print("Display the least profitable stock")
+}
+
+func listAllStocksByCompanyName() {
+    print("List all stocks sorted by company name (A-Z)")
+    companies.sort(by: {$0.companyName < $1.companyName})
+    for companyStock in companies {
+        companyStock.display()
+        print("\n")
+    }
+}
+
+func listAllStocksByValues() {
+    print("List all stocks sorted from the lowest value to the highest value")
+    companies.sort(by: {$0.companyName < $1.companyName})
+    for companyStock in companies {
+        companyStock.display()
+        print("\n")
+    }
+}
+
 func menu() {
-    print("Assignment 3")
-    
     print("How many stocks you want to save ?")
     let numberOfStocks = Int(readLine()!)!
-    let companies = NSMutableArray()
     for _ in 0..<numberOfStocks {
         print("Enter company name :")
         let companyName = readLine()!
@@ -58,11 +93,11 @@ func menu() {
         let isForiegn = readLine()! == "Yes" ? true : false
         
         if isForiegn {
-            companies.add(KpStockHolding(purchaseSharePrice: purchaseSharePrice, currentSharePrice: currentSharePrice, numberOfShares: numberOfStocks, companyName: companyName))
+            companies.append(KpStockHolding(purchaseSharePrice: purchaseSharePrice, currentSharePrice: currentSharePrice, numberOfShares: numberOfStocks, companyName: companyName))
         } else {
             print("What is the conversion rate ?")
             let conversionRate = Float(readLine()!)!
-            companies.add(KpForeignStockHolding(purchaseSharePrice: purchaseSharePrice, currentSharePrice: currentSharePrice, numberOfShares: numberOfStocks, companyName: companyName,conversionRate: conversionRate))
+            companies.append(KpForeignStockHolding(purchaseSharePrice: purchaseSharePrice, currentSharePrice: currentSharePrice, numberOfShares: numberOfStocks, companyName: companyName,conversionRate: conversionRate))
         }
     }
     var option:Int = 0
@@ -78,19 +113,27 @@ func menu() {
         option = Int(readLine()!)!
         switch option {
         case 1:
-            
+            displayStockInformationForLowestValues()
             break
         case 2:
+            displayStockWithHighestvalue()
             break
         case 3:
+            displayMostProfitableStock()
             break
         case 4:
+            displayLeastProfitableStock()
             break
         case 5:
+            listAllStocksByCompanyName()
             break
         case 6:
+            listAllStocksByValues()
             break
+        case 7:
+            break;
         default:
+            print("Enter a valid option!!!")
             break
         }
     }

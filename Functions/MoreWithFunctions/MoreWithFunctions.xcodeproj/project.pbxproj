@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46491A161D9D4B6500E7E8CF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46491A151D9D4B6500E7E8CF /* main.swift */; };
-		46491A1D1D9D669000E7E8CF /* KpScopeDeclaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46491A1C1D9D669000E7E8CF /* KpScopeDeclaration.swift */; };
+		46491A2B1D9D6F3E00E7E8CF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46491A2A1D9D6F3E00E7E8CF /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		46491A101D9D4B6500E7E8CF /* CopyFiles */ = {
+		46491A251D9D6F3E00E7E8CF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,13 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		46491A121D9D4B6500E7E8CF /* KpChapter5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KpChapter5; sourceTree = BUILT_PRODUCTS_DIR; };
-		46491A151D9D4B6500E7E8CF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		46491A1C1D9D669000E7E8CF /* KpScopeDeclaration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KpScopeDeclaration.swift; sourceTree = "<group>"; };
+		46491A271D9D6F3E00E7E8CF /* MoreWithFunctions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MoreWithFunctions; sourceTree = BUILT_PRODUCTS_DIR; };
+		46491A2A1D9D6F3E00E7E8CF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		46491A0F1D9D4B6500E7E8CF /* Frameworks */ = {
+		46491A241D9D6F3E00E7E8CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,98 +38,96 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		46491A091D9D4B6500E7E8CF = {
+		46491A1E1D9D6F3E00E7E8CF = {
 			isa = PBXGroup;
 			children = (
-				46491A141D9D4B6500E7E8CF /* KpChapter5 */,
-				46491A131D9D4B6500E7E8CF /* Products */,
+				46491A291D9D6F3E00E7E8CF /* MoreWithFunctions */,
+				46491A281D9D6F3E00E7E8CF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		46491A131D9D4B6500E7E8CF /* Products */ = {
+		46491A281D9D6F3E00E7E8CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				46491A121D9D4B6500E7E8CF /* KpChapter5 */,
+				46491A271D9D6F3E00E7E8CF /* MoreWithFunctions */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		46491A141D9D4B6500E7E8CF /* KpChapter5 */ = {
+		46491A291D9D6F3E00E7E8CF /* MoreWithFunctions */ = {
 			isa = PBXGroup;
 			children = (
-				46491A151D9D4B6500E7E8CF /* main.swift */,
-				46491A1C1D9D669000E7E8CF /* KpScopeDeclaration.swift */,
+				46491A2A1D9D6F3E00E7E8CF /* main.swift */,
 			);
-			path = KpChapter5;
+			path = MoreWithFunctions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		46491A111D9D4B6500E7E8CF /* KpChapter5 */ = {
+		46491A261D9D6F3E00E7E8CF /* MoreWithFunctions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46491A191D9D4B6500E7E8CF /* Build configuration list for PBXNativeTarget "KpChapter5" */;
+			buildConfigurationList = 46491A2E1D9D6F3E00E7E8CF /* Build configuration list for PBXNativeTarget "MoreWithFunctions" */;
 			buildPhases = (
-				46491A0E1D9D4B6500E7E8CF /* Sources */,
-				46491A0F1D9D4B6500E7E8CF /* Frameworks */,
-				46491A101D9D4B6500E7E8CF /* CopyFiles */,
+				46491A231D9D6F3E00E7E8CF /* Sources */,
+				46491A241D9D6F3E00E7E8CF /* Frameworks */,
+				46491A251D9D6F3E00E7E8CF /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = KpChapter5;
-			productName = KpChapter5;
-			productReference = 46491A121D9D4B6500E7E8CF /* KpChapter5 */;
+			name = MoreWithFunctions;
+			productName = MoreWithFunctions;
+			productReference = 46491A271D9D6F3E00E7E8CF /* MoreWithFunctions */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		46491A0A1D9D4B6500E7E8CF /* Project object */ = {
+		46491A1F1D9D6F3E00E7E8CF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = lambton;
 				TargetAttributes = {
-					46491A111D9D4B6500E7E8CF = {
+					46491A261D9D6F3E00E7E8CF = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 46491A0D1D9D4B6500E7E8CF /* Build configuration list for PBXProject "KpChapter5" */;
+			buildConfigurationList = 46491A221D9D6F3E00E7E8CF /* Build configuration list for PBXProject "MoreWithFunctions" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 46491A091D9D4B6500E7E8CF;
-			productRefGroup = 46491A131D9D4B6500E7E8CF /* Products */;
+			mainGroup = 46491A1E1D9D6F3E00E7E8CF;
+			productRefGroup = 46491A281D9D6F3E00E7E8CF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				46491A111D9D4B6500E7E8CF /* KpChapter5 */,
+				46491A261D9D6F3E00E7E8CF /* MoreWithFunctions */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		46491A0E1D9D4B6500E7E8CF /* Sources */ = {
+		46491A231D9D6F3E00E7E8CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46491A1D1D9D669000E7E8CF /* KpScopeDeclaration.swift in Sources */,
-				46491A161D9D4B6500E7E8CF /* main.swift in Sources */,
+				46491A2B1D9D6F3E00E7E8CF /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		46491A171D9D4B6500E7E8CF /* Debug */ = {
+		46491A2C1D9D6F3E00E7E8CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -179,7 +175,7 @@
 			};
 			name = Debug;
 		};
-		46491A181D9D4B6500E7E8CF /* Release */ = {
+		46491A2D1D9D6F3E00E7E8CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -219,7 +215,7 @@
 			};
 			name = Release;
 		};
-		46491A1A1D9D4B6500E7E8CF /* Debug */ = {
+		46491A2F1D9D6F3E00E7E8CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -227,7 +223,7 @@
 			};
 			name = Debug;
 		};
-		46491A1B1D9D4B6500E7E8CF /* Release */ = {
+		46491A301D9D6F3E00E7E8CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -238,24 +234,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		46491A0D1D9D4B6500E7E8CF /* Build configuration list for PBXProject "KpChapter5" */ = {
+		46491A221D9D6F3E00E7E8CF /* Build configuration list for PBXProject "MoreWithFunctions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46491A171D9D4B6500E7E8CF /* Debug */,
-				46491A181D9D4B6500E7E8CF /* Release */,
+				46491A2C1D9D6F3E00E7E8CF /* Debug */,
+				46491A2D1D9D6F3E00E7E8CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46491A191D9D4B6500E7E8CF /* Build configuration list for PBXNativeTarget "KpChapter5" */ = {
+		46491A2E1D9D6F3E00E7E8CF /* Build configuration list for PBXNativeTarget "MoreWithFunctions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46491A1A1D9D4B6500E7E8CF /* Debug */,
-				46491A1B1D9D4B6500E7E8CF /* Release */,
+				46491A2F1D9D6F3E00E7E8CF /* Debug */,
+				46491A301D9D6F3E00E7E8CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 46491A0A1D9D4B6500E7E8CF /* Project object */;
+	rootObject = 46491A1F1D9D6F3E00E7E8CF /* Project object */;
 }
