@@ -8,11 +8,7 @@
 
 import Foundation
 
-print("Hello, World!")
-/*for _ in 1...30 {
-    var number = Int(arc4random_uniform(10))
-    print(number)
-}*/
+print("Simple Dice game")
 
 enum GameStatuses {
     case Win,Lost,Continue
