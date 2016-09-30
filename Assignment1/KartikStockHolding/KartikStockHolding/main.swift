@@ -25,7 +25,7 @@ for stock in stocks {
     print("\n")
 }
 
-print("\n\t\t\t\tAssignment2")
+print("Assignment2")
 
 stocks.append(KpForeignStockHolding(purchaseSharePrice: 150.50, currentSharePrice: 145.59, numberOfShares: 50, companyName: "GOOGLE",conversionRate: 0.12))
 
@@ -77,7 +77,7 @@ func listAllStocksByValues() {
     }
 }
 
-func menu() {
+func displayMenu() {
     print("How many stocks you want to save ?")
     let numberOfStocks = Int(readLine()!)!
     for _ in 0..<numberOfStocks {
@@ -138,3 +138,4 @@ func menu() {
         }
     }
 }
+displayMenu()

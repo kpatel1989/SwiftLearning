@@ -25,4 +25,3 @@ var order = sortOrder(isAscending: true)
 print(order(10,45));
 print(order(10,5));
 print(order(56,5));
-
