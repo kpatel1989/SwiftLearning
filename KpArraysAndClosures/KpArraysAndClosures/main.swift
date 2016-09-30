@@ -22,7 +22,7 @@ names.append("Kartik")
 names.append("Jay")
 print (names)
 
-	
+
 
 var booleans = [Bool](repeating:false,count:2)
 booleans.append(false)
@@ -115,3 +115,7 @@ print(mergedArray)
 
 var sum = mergedArray.reduce(0, {(a:Int, b:Int)->Int in a + b})
 print(sum)
+
+var evenArray = mergedArray.filter({$0 & 1 == 0})
+print(evenArray)
+
