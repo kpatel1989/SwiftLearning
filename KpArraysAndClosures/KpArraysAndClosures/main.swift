@@ -82,3 +82,13 @@ print(mergedArray)
 let index = mergedArray.index(of: 5)
 print(index)
 
+mergedArray += mergedArray
+print(mergedArray)
+
+print(mergedArray[4...9])
+
+mergedArray[2...5] = [1,2]
+print(mergedArray)
+
+mergedArray[2...3] = []
+print(mergedArray)
