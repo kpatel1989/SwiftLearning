@@ -92,3 +92,26 @@ print(mergedArray)
 
 mergedArray[2...3] = []
 print(mergedArray)
+
+func ascending(a:Int, b:Int) -> Bool {
+    return a < b
+}
+func descending(a:Int, b:Int) -> Bool {
+    return a > b
+}
+
+var sort1 = mergedArray
+var sort2 = mergedArray
+
+sort1 = sort1.sorted(by: ascending)
+print(sort1)
+print(mergedArray)
+
+
+sort2 = sort2.sorted(by: {(a:Int, b:Int) -> Bool in a > b})
+print(sort2)
+print(mergedArray)
+
+var sum = mergedArray.reduce(0, {(a:Int, b:Int)->Int in a + b})
+print(sum)
+
