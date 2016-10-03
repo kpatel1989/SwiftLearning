@@ -45,18 +45,36 @@ var companies = [KpStockHolding]()
 
 func displayStockInformationForLowestValues() {
     print("Display stock information with the lowest value")
+    companies.sort(by: {$0.currentSharePrice < $1.currentSharePrice})
+    companies[0].display()
 }
 
 func displayStockWithHighestvalue() {
     print("Display stock with the highest value")
+    companies.sort(by: {$0.currentSharePrice < $1.currentSharePrice})
+    companies[companies.count-1].display()
 }
 
 func displayMostProfitableStock() {
-    print("Display stock information with the lowest value")
+    print("Display stock information with the most profitable stock")
+    let mostProfitableStock = companies.reduce(companies[0], {(profitableStock:KpStockHolding, currentStock:KpStockHolding) -> KpStockHolding in
+        if (profitableStock.currentSharePrice - profitableStock.purchaseSharePrice < currentStock.currentSharePrice - currentStock.purchaseSharePrice ) {
+            return currentStock
+        }
+        return profitableStock
+    })
+    mostProfitableStock.display()
 }
 
 func displayLeastProfitableStock() {
     print("Display the least profitable stock")
+    let leastProfitableStock = companies.reduce(companies[0], {(profitableStock:KpStockHolding, currentStock:KpStockHolding) -> KpStockHolding in
+        if (profitableStock.currentSharePrice - profitableStock.purchaseSharePrice > currentStock.currentSharePrice - currentStock.purchaseSharePrice ) {
+            return currentStock
+        }
+        return profitableStock
+    })
+    leastProfitableStock.display()
 }
 
 func listAllStocksByCompanyName() {
@@ -70,7 +88,7 @@ func listAllStocksByCompanyName() {
 
 func listAllStocksByValues() {
     print("List all stocks sorted from the lowest value to the highest value")
-    companies.sort(by: {$0.companyName < $1.companyName})
+    companies.sort(by: {$0.currentSharePrice < $1.currentSharePrice})
     for companyStock in companies {
         companyStock.display()
         print("\n")

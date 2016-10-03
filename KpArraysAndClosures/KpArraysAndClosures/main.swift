@@ -108,7 +108,6 @@ sort1 = sort1.sorted(by: ascending)
 print(sort1)
 print(mergedArray)
 
-
 sort2 = sort2.sorted(by: {(a:Int, b:Int) -> Bool in a > b})
 print(sort2)
 print(mergedArray)
