@@ -25,3 +25,31 @@ var order = sortOrder(isAscending: true)
 print(order(10,45));
 print(order(10,5));
 print(order(56,5));
+
+
+func doesNotModifyArray(values:[Int]) {
+    var val = values
+    val[1] = 123
+    print("DoesnotmodifyArray- \(val)")
+}
+
+func modifyElements(values: inout [Int]) {
+    values[0] = 245
+}
+
+func modify(values:inout [Int]) {
+    values = [1,2,3,4]
+}
+
+
+var arr = [345,6789,456,567]
+print("Initial Array \(arr)")
+
+doesNotModifyArray(values: arr)
+print("No modification to original Array \(arr)")
+
+modifyElements(values: &arr)
+print("Modify elements of original Array \(arr)")
+
+modify(values: &arr)
+print("Modify original Array \(arr)")
