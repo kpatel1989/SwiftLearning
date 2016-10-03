@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		46FF69A01DA2870700DD0E1F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FF699F1DA2870700DD0E1F /* main.swift */; };
 		46FF69A71DA2883000DD0E1F /* KpCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FF69A61DA2883000DD0E1F /* KpCard.swift */; };
+		46FF69A91DA28AA900DD0E1F /* KpDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FF69A81DA28AA900DD0E1F /* KpDeck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		46FF699C1DA2870700DD0E1F /* KpCardShuffling */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KpCardShuffling; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FF699F1DA2870700DD0E1F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		46FF69A61DA2883000DD0E1F /* KpCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KpCard.swift; sourceTree = "<group>"; };
+		46FF69A81DA28AA900DD0E1F /* KpDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KpDeck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				46FF699F1DA2870700DD0E1F /* main.swift */,
 				46FF69A61DA2883000DD0E1F /* KpCard.swift */,
+				46FF69A81DA28AA900DD0E1F /* KpDeck.swift */,
 			);
 			path = KpCardShuffling;
 			sourceTree = "<group>";
@@ -123,6 +126,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46FF69A91DA28AA900DD0E1F /* KpDeck.swift in Sources */,
 				46FF69A71DA2883000DD0E1F /* KpCard.swift in Sources */,
 				46FF69A01DA2870700DD0E1F /* main.swift in Sources */,
 			);

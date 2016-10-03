@@ -10,6 +10,8 @@ import Cocoa
 
 class KpCard: NSObject {
 
+    
+    
     private let kpFace:String
     private let kpSuit:String
     
