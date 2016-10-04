@@ -10,143 +10,143 @@ import Foundation
 
 print("Assignment 1")
 
-var stocks = [KpStockHolding]()
+var kpStocks = [KpStockHolding]()
 
-stocks.append(KpStockHolding(purchaseSharePrice: 150.50, currentSharePrice: 145.59, numberOfShares: 50, companyName: "IBM"))
+kpStocks.append(KpStockHolding(kpPurchaseSharePrice: 150.50, kpCurrentSharePrice: 145.59, kpNumberOfShares: 50, kpCompanyName: "IBM"))
 
-stocks.append(KpStockHolding(purchaseSharePrice: 125.64, currentSharePrice: 132.26, numberOfShares: 5, companyName: "ORACLE"))
+kpStocks.append(KpStockHolding(kpPurchaseSharePrice: 125.64, kpCurrentSharePrice: 132.26, kpNumberOfShares: 5, kpCompanyName: "ORACLE"))
 
-stocks.append(KpStockHolding(purchaseSharePrice: 20, currentSharePrice: 25.59, numberOfShares: 50, companyName: "MICROSOFT"))
+kpStocks.append(KpStockHolding(kpPurchaseSharePrice: 20, kpCurrentSharePrice: 25.59, kpNumberOfShares: 50, kpCompanyName: "MICROSOFT"))
 
-stocks.sort(by: {$0.companyName < $1.companyName})
+kpStocks.sort(by: {$0.kpCompanyName < $1.kpCompanyName})
 
-for stock in stocks {
-    stock.display()
+for stock in kpStocks {
+    stock.kpDisplay()
     print("\n")
 }
 
-print("Assignment2")
+print("Assignment 2")
 
-stocks.append(KpForeignStockHolding(purchaseSharePrice: 150.50, currentSharePrice: 145.59, numberOfShares: 50, companyName: "GOOGLE",conversionRate: 0.12))
+kpStocks.append(KpForeignStockHolding(kpPurchaseSharePrice: 150.50, kpCurrentSharePrice: 145.59, kpNumberOfShares: 50, kpCompanyName: "GOOGLE",conversionRate: 0.12))
 
-stocks.append(KpForeignStockHolding(purchaseSharePrice: 125.64, currentSharePrice: 132.26, numberOfShares: 5, companyName: "FACEBOOK",conversionRate: 1.6))
+kpStocks.append(KpForeignStockHolding(kpPurchaseSharePrice: 125.64, kpCurrentSharePrice: 132.26, kpNumberOfShares: 5, kpCompanyName: "FACEBOOK",conversionRate: 1.6))
 
-stocks.append(KpForeignStockHolding(purchaseSharePrice: 20, currentSharePrice: 25.59, numberOfShares: 50, companyName: "APPLE",conversionRate: 12.5))
+kpStocks.append(KpForeignStockHolding(kpPurchaseSharePrice: 20, kpCurrentSharePrice: 25.59, kpNumberOfShares: 50, kpCompanyName: "APPLE",conversionRate: 12.5))
 
-stocks.sort(by: {$0.companyName > $1.companyName})
-for stock in stocks {
-    stock.display()
+kpStocks.sort(by: {$0.kpCompanyName > $1.kpCompanyName})
+for stock in kpStocks {
+    stock.kpDisplay()
     print("\n")
 }
 
 print("Assignment 3")
 
-var companies = [KpStockHolding]()
+var kpCompanies = [KpStockHolding]()
 
-func displayStockInformationForLowestValues() {
-    print("Display stock information with the lowest value")
-    companies.sort(by: {$0.currentSharePrice < $1.currentSharePrice})
-    companies[0].display()
+func kpDisplayStockInformationForLowestValues() {
+    print("kpDisplay stock information with the lowest value")
+    kpCompanies.sort(by: {$0.kpCurrentSharePrice < $1.kpCurrentSharePrice})
+    kpCompanies[0].kpDisplay()
 }
 
-func displayStockWithHighestvalue() {
-    print("Display stock with the highest value")
-    companies.sort(by: {$0.currentSharePrice < $1.currentSharePrice})
-    companies[companies.count-1].display()
+func kpDisplayStockWithHighestvalue() {
+    print("kpDisplay stock with the highest value")
+    kpCompanies.sort(by: {$0.kpCurrentSharePrice < $1.kpCurrentSharePrice})
+    kpCompanies[kpCompanies.count-1].kpDisplay()
 }
 
-func displayMostProfitableStock() {
-    print("Display stock information with the most profitable stock")
-    let mostProfitableStock = companies.reduce(companies[0], {(profitableStock:KpStockHolding, currentStock:KpStockHolding) -> KpStockHolding in
-        if (profitableStock.currentSharePrice - profitableStock.purchaseSharePrice < currentStock.currentSharePrice - currentStock.purchaseSharePrice ) {
+func kpDisplayMostProfitableStock() {
+    print("kpDisplay stock information with the most profitable stock")
+    let mostProfitableStock = kpCompanies.reduce(kpCompanies[0], {(profitableStock:KpStockHolding, currentStock:KpStockHolding) -> KpStockHolding in
+        if (profitableStock.kpCurrentSharePrice - profitableStock.kpPurchaseSharePrice < currentStock.kpCurrentSharePrice - currentStock.kpPurchaseSharePrice ) {
             return currentStock
         }
         return profitableStock
     })
-    mostProfitableStock.display()
+    mostProfitableStock.kpDisplay()
 }
 
-func displayLeastProfitableStock() {
-    print("Display the least profitable stock")
-    let leastProfitableStock = companies.reduce(companies[0], {(profitableStock:KpStockHolding, currentStock:KpStockHolding) -> KpStockHolding in
-        if (profitableStock.currentSharePrice - profitableStock.purchaseSharePrice > currentStock.currentSharePrice - currentStock.purchaseSharePrice ) {
+func kpDisplayLeastProfitableStock() {
+    print("kpDisplay the least profitable stock")
+    let leastProfitableStock = kpCompanies.reduce(kpCompanies[0], {(profitableStock:KpStockHolding, currentStock:KpStockHolding) -> KpStockHolding in
+        if (profitableStock.kpCurrentSharePrice - profitableStock.kpPurchaseSharePrice > currentStock.kpCurrentSharePrice - currentStock.kpPurchaseSharePrice ) {
             return currentStock
         }
         return profitableStock
     })
-    leastProfitableStock.display()
+    leastProfitableStock.kpDisplay()
 }
 
-func listAllStocksByCompanyName() {
-    print("List all stocks sorted by company name (A-Z)")
-    companies.sort(by: {$0.companyName < $1.companyName})
-    for companyStock in companies {
-        companyStock.display()
+func kpListAllStocksByCompanyName() {
+    print("List all kpStocks sorted by company name (A-Z)")
+    kpCompanies.sort(by: {$0.kpCompanyName < $1.kpCompanyName})
+    for companyStock in kpCompanies {
+        companyStock.kpDisplay()
         print("\n")
     }
 }
 
-func listAllStocksByValues() {
-    print("List all stocks sorted from the lowest value to the highest value")
-    companies.sort(by: {$0.currentSharePrice < $1.currentSharePrice})
-    for companyStock in companies {
-        companyStock.display()
+func kpListAllStocksByValues() {
+    print("List all kpStocks sorted from the lowest value to the highest value")
+    kpCompanies.sort(by: {$0.kpCurrentSharePrice < $1.kpCurrentSharePrice})
+    for companyStock in kpCompanies {
+        companyStock.kpDisplay()
         print("\n")
     }
 }
 
-func displayMenu() {
-    print("How many stocks you want to save ?")
-    let numberOfStocks = Int(readLine()!)!
-    for _ in 0..<numberOfStocks {
+func kpDisplayMenu() {
+    print("How many kpStocks you want to save ?")
+    let numberOfkpStocks = Int(readLine()!)!
+    for _ in 0..<numberOfkpStocks {
         print("Enter company name :")
-        let companyName = readLine()!
-        print("Enter current share price for \(companyName):")
-        let currentSharePrice = Float(readLine()!)!
-        print("Enter share purchase price for \(companyName):")
-        let purchaseSharePrice = Float(readLine()!)!
-        print("Enter number of stocks to purchase \(companyName):")
-        let numberOfStocks = Int(readLine()!)!
-        print("Does \(companyName) has a foreign stock (Yes/No)?")
+        let kpCompanyName = readLine()!
+        print("Enter current share price for \(kpCompanyName):")
+        let kpCurrentSharePrice = Float(readLine()!)!
+        print("Enter share purchase price for \(kpCompanyName):")
+        let kpPurchaseSharePrice = Float(readLine()!)!
+        print("Enter number of kpStocks to purchase \(kpCompanyName):")
+        let numberOfkpStocks = Int(readLine()!)!
+        print("Does \(kpCompanyName) has a foreign stock (Yes/No)?")
         let isForiegn = readLine()! == "Yes" ? true : false
         
-        if isForiegn {
-            companies.append(KpStockHolding(purchaseSharePrice: purchaseSharePrice, currentSharePrice: currentSharePrice, numberOfShares: numberOfStocks, companyName: companyName))
+        if !isForiegn {
+            kpCompanies.append(KpStockHolding(kpPurchaseSharePrice: kpPurchaseSharePrice, kpCurrentSharePrice: kpCurrentSharePrice, kpNumberOfShares: numberOfkpStocks, kpCompanyName: kpCompanyName))
         } else {
             print("What is the conversion rate ?")
             let conversionRate = Float(readLine()!)!
-            companies.append(KpForeignStockHolding(purchaseSharePrice: purchaseSharePrice, currentSharePrice: currentSharePrice, numberOfShares: numberOfStocks, companyName: companyName,conversionRate: conversionRate))
+            kpCompanies.append(KpForeignStockHolding(kpPurchaseSharePrice: kpPurchaseSharePrice, kpCurrentSharePrice: kpCurrentSharePrice, kpNumberOfShares: numberOfkpStocks, kpCompanyName: kpCompanyName,conversionRate: conversionRate))
         }
     }
     var option:Int = 0
     while(option != 7) {
-        print("1. Display stock information with the lowest value")
-        print("2. Display stock with the highest value")
-        print("3. Display the most profitable stock")
-        print("4. Display the least profitable stock")
-        print("5. List all stocks sorted by company name (A-Z)")
-        print("6. List all stocks sorted from the lowest value to the highest value")
+        print("1. kpDisplay stock information with the lowest value")
+        print("2. kpDisplay stock with the highest value")
+        print("3. kpDisplay the most profitable stock")
+        print("4. kpDisplay the least profitable stock")
+        print("5. List all kpStocks sorted by company name (A-Z)")
+        print("6. List all kpStocks sorted from the lowest value to the highest value")
         print("7. Exit")
         print("Choose an option:")
         option = Int(readLine()!)!
         switch option {
         case 1:
-            displayStockInformationForLowestValues()
+            kpDisplayStockInformationForLowestValues()
             break
         case 2:
-            displayStockWithHighestvalue()
+            kpDisplayStockWithHighestvalue()
             break
         case 3:
-            displayMostProfitableStock()
+            kpDisplayMostProfitableStock()
             break
         case 4:
-            displayLeastProfitableStock()
+            kpDisplayLeastProfitableStock()
             break
         case 5:
-            listAllStocksByCompanyName()
+            kpListAllStocksByCompanyName()
             break
         case 6:
-            listAllStocksByValues()
+            kpListAllStocksByValues()
             break
         case 7:
             break;
@@ -156,4 +156,4 @@ func displayMenu() {
         }
     }
 }
-displayMenu()
+kpDisplayMenu()

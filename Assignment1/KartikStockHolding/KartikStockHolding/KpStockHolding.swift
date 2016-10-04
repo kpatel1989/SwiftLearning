@@ -10,35 +10,35 @@ import Cocoa
 
 public class KpStockHolding: NSObject {
 
-    private(set) var purchaseSharePrice:Float
-    private(set) var currentSharePrice:Float
-    private(set) var numberOfShares:Int
-    var companyName:String
+    private(set) var kpPurchaseSharePrice:Float
+    private(set) var kpCurrentSharePrice:Float
+    private(set) var kpNumberOfShares:Int
+    var kpCompanyName:String
     
-    init(purchaseSharePrice:Float, currentSharePrice:Float, numberOfShares:Int, companyName:String){
-        self.purchaseSharePrice = purchaseSharePrice
-        self.currentSharePrice = currentSharePrice
-        self.numberOfShares = numberOfShares
-        self.companyName = companyName
+    init(kpPurchaseSharePrice:Float, kpCurrentSharePrice:Float, kpNumberOfShares:Int, kpCompanyName:String){
+        self.kpPurchaseSharePrice = kpPurchaseSharePrice
+        self.kpCurrentSharePrice = kpCurrentSharePrice
+        self.kpNumberOfShares = kpNumberOfShares
+        self.kpCompanyName = kpCompanyName
     }
     
-    func costInDollars() -> Float {
-        return purchaseSharePrice * Float(numberOfShares)
+    func kpCostInDollars() -> Float {
+        return kpPurchaseSharePrice * Float(kpNumberOfShares)
     }
     
-    func valueInDollars() -> Float {
-        return currentSharePrice * Float(numberOfShares)
+    func kpValueInDollars() -> Float {
+        return kpCurrentSharePrice * Float(kpNumberOfShares)
     }
     
-    func display() {
-        print("Company Name : \(companyName)")
+    func kpDisplay() {
+        print("Company Name : \(kpCompanyName)")
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = NumberFormatter.Style.currency
         numberFormatter.currencySymbol = "$"
-        print("Current Share Price : \(numberFormatter.string(for:  currentSharePrice)!)")
-        print("Purchase Share Price: \(numberFormatter.string(for: purchaseSharePrice)!)")
-        print("Number of shares purchased: \(numberOfShares)")
-        print("Cost in Dollars : \(numberFormatter.string(for: costInDollars())!)")
-        print("Value in Dollars : \(numberFormatter.string(for: valueInDollars())!)")
+        print("Current Share Price : \(numberFormatter.string(for:  kpCurrentSharePrice)!)")
+        print("Purchase Share Price: \(numberFormatter.string(for: kpPurchaseSharePrice)!)")
+        print("Number of shares purchased: \(kpNumberOfShares)")
+        print("Cost in Dollars : \(numberFormatter.string(for: kpCostInDollars())!)")
+        print("Value in Dollars : \(numberFormatter.string(for: kpValueInDollars())!)")
     }
 }

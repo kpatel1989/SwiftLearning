@@ -11,17 +11,17 @@ import Cocoa
 class KpForeignStockHolding: KpStockHolding {
     var conversionRate:Float
     
-    init(purchaseSharePrice:Float, currentSharePrice:Float, numberOfShares:Int, companyName:String, conversionRate:Float){
+    init(kpPurchaseSharePrice:Float, kpCurrentSharePrice:Float, kpNumberOfShares:Int, kpCompanyName:String, conversionRate:Float){
         self.conversionRate = conversionRate
-        super.init(purchaseSharePrice: purchaseSharePrice,currentSharePrice: currentSharePrice,numberOfShares: numberOfShares,companyName: companyName)
+        super.init(kpPurchaseSharePrice: kpPurchaseSharePrice,kpCurrentSharePrice: kpCurrentSharePrice,kpNumberOfShares: kpNumberOfShares,kpCompanyName: kpCompanyName)
     }
     
-    override func costInDollars() -> Float {
-        return purchaseSharePrice * Float(numberOfShares) * conversionRate
+    override func kpCostInDollars() -> Float {
+        return kpPurchaseSharePrice * Float(kpNumberOfShares) * conversionRate
     }
     
-    override func valueInDollars() -> Float {
-        return currentSharePrice * Float(numberOfShares) * conversionRate
+    override func kpValueInDollars() -> Float {
+        return kpCurrentSharePrice * Float(kpNumberOfShares) * conversionRate
     }
     
 }
