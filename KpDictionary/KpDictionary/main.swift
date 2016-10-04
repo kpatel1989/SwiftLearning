@@ -82,3 +82,20 @@ for (studentName, grades) in gradeBook {
 }
 
 print("Average grade = " + String(format:"%.2f", allGradesTotal/Double(allGrades)))
+
+
+var dynamicCreation: [Int:String] = [:]
+
+
+dynamicCreation[1] = "Hello"
+dynamicCreation[2] = "World"
+dynamicCreation[3] = "asdasd"
+
+dynamicCreation.updateValue("Hey", forKey: 1)
+
+print(dynamicCreation)
+
+
+dynamicCreation.removeValue(forKey: 3)
+print(dynamicCreation)
+
