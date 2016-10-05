@@ -9,11 +9,11 @@
 import Cocoa
 
 class KpMonths: NSObject {
-    var monthName : String
-    var numberOfDays : Int
+    var kpMonthName : String
+    var kpNumberOfDays : Int
     
     init(monthName:String, numberOfDays:Int){
-        self.monthName = monthName
-        self.numberOfDays = numberOfDays
+        self.kpMonthName = monthName
+        self.kpNumberOfDays = numberOfDays
     }
 }
