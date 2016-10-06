@@ -46,6 +46,7 @@ let wheel4 = KpWheel(color: KpColor.Cyan.rawValue,year: KpYear.Year3.rawValue,ma
 
 print("Inital car object")
 car.kpPrint()
+print("\n\n\n")
 
 print("Add wheels")
 car.kpAddWheel(wheel: wheel1)
@@ -53,13 +54,14 @@ car.kpAddWheel(wheel: wheel2)
 car.kpAddWheel(wheel: wheel3)
 car.kpAddWheel(wheel: wheel4)
 car.kpPrint()
-
+print("\n\n\n")
 
 print("Remove a wheel by wheel object")
 car.kpRemoveWheel(wheel:wheel1)
 car.kpPrint()
-
+print("\n\n\n")
 
 print("Remove a wheel by index")
 car.kpRemoveWheel(index: 2)
 car.kpPrint()
+print("\n\n\n")

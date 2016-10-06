@@ -21,6 +21,8 @@ class KpWheel: NSObject {
     }
     
     func kpPrint() {
-        
+        print("Wheel color :" + kpColor)
+        print("Wheel year : \(kpYear)")
+        print("Wheel manufactory : " + kpManufactory)
     }
 }

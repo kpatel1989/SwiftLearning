@@ -22,19 +22,31 @@ class KpCar: NSObject {
     }
     
     func kpPrint() {
-        
+        print("Car color : " + kpColor)
+        print("Car year : \(kpYear)")
+        print("Car manufactory : " + kpManufactory)
+        print("Number of wheels : \(kpGetNumberOfWheels())" )
+        for wheel in kpWheels {
+            print("\n")
+            wheel.kpPrint()
+        }
     }
     
     func kpAddWheel(wheel:KpWheel) {
-        
+        kpWheels.append(wheel)
     }
     
     func kpRemoveWheel(wheel:KpWheel) {
-        
+        for index in 0..<kpWheels.count {
+            if (wheel == kpWheels[index]) {
+                kpWheels.remove(at: index)
+                break;
+            }
+        }
     }
     
     func kpRemoveWheel(index:Int) {
-        
+        kpWheels.remove(at: index)
     }
     
     func kpGetNumberOfWheels() -> Int {
