@@ -17,9 +17,16 @@ class KpLazyTest: NSObject {
         width = w
     }
     
-    lazy var area = KpLazyTest.computeArea(obj: self)
+    static var area1:Int {
+        get {
+            return KpLazyTest.computeArea()
+        }
+    }
     
-    class func computeArea(obj:KpLazyTest) -> Int {
-        return obj.length * obj.width
+    lazy var area = KpLazyTest.computeArea()
+    
+    class func computeArea() -> Int {
+        return 10
     }
 }
+
