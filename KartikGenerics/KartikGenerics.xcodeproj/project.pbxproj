@@ -7,15 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46027E3A1DA7E72B00D8A171 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46027E391DA7E72B00D8A171 /* main.swift */; };
-		460B277B1DAD0EDB0030115E /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460B277A1DAD0EDB0030115E /* Deck.swift */; };
-		460B27901DAD13580030115E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460B278F1DAD13580030115E /* Game.swift */; };
-		4612BFDA1DB12A11007DCA88 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612BFD91DB12A11007DCA88 /* GameView.swift */; };
-		4612BFDC1DB12A1E007DCA88 /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612BFDB1DB12A1E007DCA88 /* GameLogic.swift */; };
+		4612BFD11DB104E4007DCA88 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612BFD01DB104E4007DCA88 /* main.swift */; };
+		4612BFD81DB10524007DCA88 /* KartikStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612BFD71DB10524007DCA88 /* KartikStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		46027E341DA7E72B00D8A171 /* CopyFiles */ = {
+		4612BFCB1DB104E4007DCA88 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -27,16 +24,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		46027E361DA7E72B00D8A171 /* PokerGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PokerGame; sourceTree = BUILT_PRODUCTS_DIR; };
-		46027E391DA7E72B00D8A171 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		460B277A1DAD0EDB0030115E /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
-		460B278F1DAD13580030115E /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		4612BFD91DB12A11007DCA88 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
-		4612BFDB1DB12A1E007DCA88 /* GameLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
+		4612BFCD1DB104E4007DCA88 /* KartikGenerics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KartikGenerics; sourceTree = BUILT_PRODUCTS_DIR; };
+		4612BFD01DB104E4007DCA88 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4612BFD71DB10524007DCA88 /* KartikStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KartikStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		46027E331DA7E72B00D8A171 /* Frameworks */ = {
+		4612BFCA1DB104E4007DCA88 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,104 +40,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		46027E2D1DA7E72B00D8A171 = {
+		4612BFC41DB104E4007DCA88 = {
 			isa = PBXGroup;
 			children = (
-				46027E381DA7E72B00D8A171 /* PokerGame */,
-				46027E371DA7E72B00D8A171 /* Products */,
+				4612BFCF1DB104E4007DCA88 /* KartikGenerics */,
+				4612BFCE1DB104E4007DCA88 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		46027E371DA7E72B00D8A171 /* Products */ = {
+		4612BFCE1DB104E4007DCA88 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				46027E361DA7E72B00D8A171 /* PokerGame */,
+				4612BFCD1DB104E4007DCA88 /* KartikGenerics */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		46027E381DA7E72B00D8A171 /* PokerGame */ = {
+		4612BFCF1DB104E4007DCA88 /* KartikGenerics */ = {
 			isa = PBXGroup;
 			children = (
-				46027E391DA7E72B00D8A171 /* main.swift */,
-				460B277A1DAD0EDB0030115E /* Deck.swift */,
-				460B278F1DAD13580030115E /* Game.swift */,
-				4612BFDB1DB12A1E007DCA88 /* GameLogic.swift */,
-				4612BFD91DB12A11007DCA88 /* GameView.swift */,
+				4612BFD01DB104E4007DCA88 /* main.swift */,
+				4612BFD71DB10524007DCA88 /* KartikStack.swift */,
 			);
-			path = PokerGame;
+			path = KartikGenerics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		46027E351DA7E72B00D8A171 /* PokerGame */ = {
+		4612BFCC1DB104E4007DCA88 /* KartikGenerics */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46027E3D1DA7E72B00D8A171 /* Build configuration list for PBXNativeTarget "PokerGame" */;
+			buildConfigurationList = 4612BFD41DB104E4007DCA88 /* Build configuration list for PBXNativeTarget "KartikGenerics" */;
 			buildPhases = (
-				46027E321DA7E72B00D8A171 /* Sources */,
-				46027E331DA7E72B00D8A171 /* Frameworks */,
-				46027E341DA7E72B00D8A171 /* CopyFiles */,
+				4612BFC91DB104E4007DCA88 /* Sources */,
+				4612BFCA1DB104E4007DCA88 /* Frameworks */,
+				4612BFCB1DB104E4007DCA88 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PokerGame;
-			productName = PokerGame;
-			productReference = 46027E361DA7E72B00D8A171 /* PokerGame */;
+			name = KartikGenerics;
+			productName = KartikGenerics;
+			productReference = 4612BFCD1DB104E4007DCA88 /* KartikGenerics */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		46027E2E1DA7E72B00D8A171 /* Project object */ = {
+		4612BFC51DB104E4007DCA88 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = KartikPatel;
+				ORGANIZATIONNAME = LambtonCollege;
 				TargetAttributes = {
-					46027E351DA7E72B00D8A171 = {
+					4612BFCC1DB104E4007DCA88 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 46027E311DA7E72B00D8A171 /* Build configuration list for PBXProject "PokerGame" */;
+			buildConfigurationList = 4612BFC81DB104E4007DCA88 /* Build configuration list for PBXProject "KartikGenerics" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 46027E2D1DA7E72B00D8A171;
-			productRefGroup = 46027E371DA7E72B00D8A171 /* Products */;
+			mainGroup = 4612BFC41DB104E4007DCA88;
+			productRefGroup = 4612BFCE1DB104E4007DCA88 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				46027E351DA7E72B00D8A171 /* PokerGame */,
+				4612BFCC1DB104E4007DCA88 /* KartikGenerics */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		46027E321DA7E72B00D8A171 /* Sources */ = {
+		4612BFC91DB104E4007DCA88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				460B27901DAD13580030115E /* Game.swift in Sources */,
-				460B277B1DAD0EDB0030115E /* Deck.swift in Sources */,
-				4612BFDA1DB12A11007DCA88 /* GameView.swift in Sources */,
-				4612BFDC1DB12A1E007DCA88 /* GameLogic.swift in Sources */,
-				46027E3A1DA7E72B00D8A171 /* main.swift in Sources */,
+				4612BFD81DB10524007DCA88 /* KartikStack.swift in Sources */,
+				4612BFD11DB104E4007DCA88 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		46027E3B1DA7E72B00D8A171 /* Debug */ = {
+		4612BFD21DB104E4007DCA88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -191,7 +179,7 @@
 			};
 			name = Debug;
 		};
-		46027E3C1DA7E72B00D8A171 /* Release */ = {
+		4612BFD31DB104E4007DCA88 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -231,7 +219,7 @@
 			};
 			name = Release;
 		};
-		46027E3E1DA7E72B00D8A171 /* Debug */ = {
+		4612BFD51DB104E4007DCA88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -239,7 +227,7 @@
 			};
 			name = Debug;
 		};
-		46027E3F1DA7E72B00D8A171 /* Release */ = {
+		4612BFD61DB104E4007DCA88 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -250,25 +238,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		46027E311DA7E72B00D8A171 /* Build configuration list for PBXProject "PokerGame" */ = {
+		4612BFC81DB104E4007DCA88 /* Build configuration list for PBXProject "KartikGenerics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46027E3B1DA7E72B00D8A171 /* Debug */,
-				46027E3C1DA7E72B00D8A171 /* Release */,
+				4612BFD21DB104E4007DCA88 /* Debug */,
+				4612BFD31DB104E4007DCA88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46027E3D1DA7E72B00D8A171 /* Build configuration list for PBXNativeTarget "PokerGame" */ = {
+		4612BFD41DB104E4007DCA88 /* Build configuration list for PBXNativeTarget "KartikGenerics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46027E3E1DA7E72B00D8A171 /* Debug */,
-				46027E3F1DA7E72B00D8A171 /* Release */,
+				4612BFD51DB104E4007DCA88 /* Debug */,
+				4612BFD61DB104E4007DCA88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 46027E2E1DA7E72B00D8A171 /* Project object */;
+	rootObject = 4612BFC51DB104E4007DCA88 /* Project object */;
 }

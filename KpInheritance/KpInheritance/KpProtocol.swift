@@ -19,6 +19,8 @@ protocol KpProtocol {
         set
     }
     func kpPayMoney() -> NSDecimalNumber
+    
+    func area() -> Float
 }
 
 protocol NewProtocol : KpProtocol {
@@ -26,6 +28,10 @@ protocol NewProtocol : KpProtocol {
 }
 
 class KpInvoice : NewProtocol {
+    func area() -> Float {
+        return 10.0
+    }
+
     func kpPayMoney() -> NSDecimalNumber {
         return kpPaymentAmount
     }
@@ -34,5 +40,6 @@ class KpInvoice : NewProtocol {
 
     var kpPaymentAmount: NSDecimalNumber = 0.0
 
+    
     
 }

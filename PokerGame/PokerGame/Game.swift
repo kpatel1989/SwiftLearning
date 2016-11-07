@@ -26,26 +26,30 @@ class Game: NSObject {
     }
     
     func addPlayer() {
-        //Add a new player to the game.
+        //TODO: Add a new player to the game.
     }
     
     func distributeCards() {
-        //set hole cards for each player.
+        //TODO: set hole cards for each player.
     }
     
     func playRound() {
-        
+        //TODO: Distribute cards
+        //TODO: Compute Card Ranking. //optional.
+        //TODO: start betting
+        //TODO: loop on all the players. set currentPlayer
+        //TODO: Continue round untill the betting value is same for all.
     }
     
-    func performAction(player: Player,action:BettingAction) {
-        
-    }
-    
-    func displayCurrentStatus() {
-        
+    func performAction(player: Player, action:BettingAction) {
+        //TODO: run switch case on action.
+        //      if action is check -> call check()
+        //      if action is bet -> call bet()
+        //      if action is fold. -> call fold()
     }
     
     func reset() {
+        //TODO: Clear table, pot,
         deck.reset()
     }
 }

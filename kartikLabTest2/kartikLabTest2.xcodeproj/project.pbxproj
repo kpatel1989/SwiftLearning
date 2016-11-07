@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46027E3A1DA7E72B00D8A171 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46027E391DA7E72B00D8A171 /* main.swift */; };
-		460B277B1DAD0EDB0030115E /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460B277A1DAD0EDB0030115E /* Deck.swift */; };
-		460B27901DAD13580030115E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460B278F1DAD13580030115E /* Game.swift */; };
-		4612BFDA1DB12A11007DCA88 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612BFD91DB12A11007DCA88 /* GameView.swift */; };
-		4612BFDC1DB12A1E007DCA88 /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612BFDB1DB12A1E007DCA88 /* GameLogic.swift */; };
+		4612BFB21DAE654A007DCA88 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612BFB11DAE654A007DCA88 /* main.swift */; };
+		4612BFB91DAE66B0007DCA88 /* KartikMotorVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612BFB81DAE66B0007DCA88 /* KartikMotorVehicle.swift */; };
+		4612BFBB1DAE66CA007DCA88 /* KartikBoat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612BFBA1DAE66CA007DCA88 /* KartikBoat.swift */; };
+		4612BFBD1DAE66DE007DCA88 /* KartikCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612BFBC1DAE66DE007DCA88 /* KartikCar.swift */; };
+		4612BFBF1DAE66F2007DCA88 /* KartikStreetLegal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612BFBE1DAE66F2007DCA88 /* KartikStreetLegal.swift */; };
+		4612BFC11DAE675E007DCA88 /* KartikBicycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612BFC01DAE675E007DCA88 /* KartikBicycle.swift */; };
+		4612BFC31DAE6777007DCA88 /* KartikPedestrian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612BFC21DAE6777007DCA88 /* KartikPedestrian.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		46027E341DA7E72B00D8A171 /* CopyFiles */ = {
+		4612BFAC1DAE654A007DCA88 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -27,16 +29,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		46027E361DA7E72B00D8A171 /* PokerGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PokerGame; sourceTree = BUILT_PRODUCTS_DIR; };
-		46027E391DA7E72B00D8A171 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		460B277A1DAD0EDB0030115E /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
-		460B278F1DAD13580030115E /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		4612BFD91DB12A11007DCA88 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
-		4612BFDB1DB12A1E007DCA88 /* GameLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
+		4612BFAE1DAE654A007DCA88 /* kartikLabTest2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = kartikLabTest2; sourceTree = BUILT_PRODUCTS_DIR; };
+		4612BFB11DAE654A007DCA88 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4612BFB81DAE66B0007DCA88 /* KartikMotorVehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KartikMotorVehicle.swift; sourceTree = "<group>"; };
+		4612BFBA1DAE66CA007DCA88 /* KartikBoat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KartikBoat.swift; sourceTree = "<group>"; };
+		4612BFBC1DAE66DE007DCA88 /* KartikCar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KartikCar.swift; sourceTree = "<group>"; };
+		4612BFBE1DAE66F2007DCA88 /* KartikStreetLegal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KartikStreetLegal.swift; sourceTree = "<group>"; };
+		4612BFC01DAE675E007DCA88 /* KartikBicycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KartikBicycle.swift; sourceTree = "<group>"; };
+		4612BFC21DAE6777007DCA88 /* KartikPedestrian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KartikPedestrian.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		46027E331DA7E72B00D8A171 /* Frameworks */ = {
+		4612BFAB1DAE654A007DCA88 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,104 +50,108 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		46027E2D1DA7E72B00D8A171 = {
+		4612BFA51DAE654A007DCA88 = {
 			isa = PBXGroup;
 			children = (
-				46027E381DA7E72B00D8A171 /* PokerGame */,
-				46027E371DA7E72B00D8A171 /* Products */,
+				4612BFB01DAE654A007DCA88 /* kartikLabTest2 */,
+				4612BFAF1DAE654A007DCA88 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		46027E371DA7E72B00D8A171 /* Products */ = {
+		4612BFAF1DAE654A007DCA88 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				46027E361DA7E72B00D8A171 /* PokerGame */,
+				4612BFAE1DAE654A007DCA88 /* kartikLabTest2 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		46027E381DA7E72B00D8A171 /* PokerGame */ = {
+		4612BFB01DAE654A007DCA88 /* kartikLabTest2 */ = {
 			isa = PBXGroup;
 			children = (
-				46027E391DA7E72B00D8A171 /* main.swift */,
-				460B277A1DAD0EDB0030115E /* Deck.swift */,
-				460B278F1DAD13580030115E /* Game.swift */,
-				4612BFDB1DB12A1E007DCA88 /* GameLogic.swift */,
-				4612BFD91DB12A11007DCA88 /* GameView.swift */,
+				4612BFB11DAE654A007DCA88 /* main.swift */,
+				4612BFB81DAE66B0007DCA88 /* KartikMotorVehicle.swift */,
+				4612BFBA1DAE66CA007DCA88 /* KartikBoat.swift */,
+				4612BFBC1DAE66DE007DCA88 /* KartikCar.swift */,
+				4612BFBE1DAE66F2007DCA88 /* KartikStreetLegal.swift */,
+				4612BFC01DAE675E007DCA88 /* KartikBicycle.swift */,
+				4612BFC21DAE6777007DCA88 /* KartikPedestrian.swift */,
 			);
-			path = PokerGame;
+			path = kartikLabTest2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		46027E351DA7E72B00D8A171 /* PokerGame */ = {
+		4612BFAD1DAE654A007DCA88 /* kartikLabTest2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46027E3D1DA7E72B00D8A171 /* Build configuration list for PBXNativeTarget "PokerGame" */;
+			buildConfigurationList = 4612BFB51DAE654A007DCA88 /* Build configuration list for PBXNativeTarget "kartikLabTest2" */;
 			buildPhases = (
-				46027E321DA7E72B00D8A171 /* Sources */,
-				46027E331DA7E72B00D8A171 /* Frameworks */,
-				46027E341DA7E72B00D8A171 /* CopyFiles */,
+				4612BFAA1DAE654A007DCA88 /* Sources */,
+				4612BFAB1DAE654A007DCA88 /* Frameworks */,
+				4612BFAC1DAE654A007DCA88 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PokerGame;
-			productName = PokerGame;
-			productReference = 46027E361DA7E72B00D8A171 /* PokerGame */;
+			name = kartikLabTest2;
+			productName = kartikLabTest2;
+			productReference = 4612BFAE1DAE654A007DCA88 /* kartikLabTest2 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		46027E2E1DA7E72B00D8A171 /* Project object */ = {
+		4612BFA61DAE654A007DCA88 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = KartikPatel;
+				ORGANIZATIONNAME = LambtonCollege;
 				TargetAttributes = {
-					46027E351DA7E72B00D8A171 = {
+					4612BFAD1DAE654A007DCA88 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 46027E311DA7E72B00D8A171 /* Build configuration list for PBXProject "PokerGame" */;
+			buildConfigurationList = 4612BFA91DAE654A007DCA88 /* Build configuration list for PBXProject "kartikLabTest2" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 46027E2D1DA7E72B00D8A171;
-			productRefGroup = 46027E371DA7E72B00D8A171 /* Products */;
+			mainGroup = 4612BFA51DAE654A007DCA88;
+			productRefGroup = 4612BFAF1DAE654A007DCA88 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				46027E351DA7E72B00D8A171 /* PokerGame */,
+				4612BFAD1DAE654A007DCA88 /* kartikLabTest2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		46027E321DA7E72B00D8A171 /* Sources */ = {
+		4612BFAA1DAE654A007DCA88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				460B27901DAD13580030115E /* Game.swift in Sources */,
-				460B277B1DAD0EDB0030115E /* Deck.swift in Sources */,
-				4612BFDA1DB12A11007DCA88 /* GameView.swift in Sources */,
-				4612BFDC1DB12A1E007DCA88 /* GameLogic.swift in Sources */,
-				46027E3A1DA7E72B00D8A171 /* main.swift in Sources */,
+				4612BFC31DAE6777007DCA88 /* KartikPedestrian.swift in Sources */,
+				4612BFB91DAE66B0007DCA88 /* KartikMotorVehicle.swift in Sources */,
+				4612BFB21DAE654A007DCA88 /* main.swift in Sources */,
+				4612BFBD1DAE66DE007DCA88 /* KartikCar.swift in Sources */,
+				4612BFBF1DAE66F2007DCA88 /* KartikStreetLegal.swift in Sources */,
+				4612BFBB1DAE66CA007DCA88 /* KartikBoat.swift in Sources */,
+				4612BFC11DAE675E007DCA88 /* KartikBicycle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		46027E3B1DA7E72B00D8A171 /* Debug */ = {
+		4612BFB31DAE654A007DCA88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -191,7 +199,7 @@
 			};
 			name = Debug;
 		};
-		46027E3C1DA7E72B00D8A171 /* Release */ = {
+		4612BFB41DAE654A007DCA88 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -231,7 +239,7 @@
 			};
 			name = Release;
 		};
-		46027E3E1DA7E72B00D8A171 /* Debug */ = {
+		4612BFB61DAE654A007DCA88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -239,7 +247,7 @@
 			};
 			name = Debug;
 		};
-		46027E3F1DA7E72B00D8A171 /* Release */ = {
+		4612BFB71DAE654A007DCA88 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -250,25 +258,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		46027E311DA7E72B00D8A171 /* Build configuration list for PBXProject "PokerGame" */ = {
+		4612BFA91DAE654A007DCA88 /* Build configuration list for PBXProject "kartikLabTest2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46027E3B1DA7E72B00D8A171 /* Debug */,
-				46027E3C1DA7E72B00D8A171 /* Release */,
+				4612BFB31DAE654A007DCA88 /* Debug */,
+				4612BFB41DAE654A007DCA88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46027E3D1DA7E72B00D8A171 /* Build configuration list for PBXNativeTarget "PokerGame" */ = {
+		4612BFB51DAE654A007DCA88 /* Build configuration list for PBXNativeTarget "kartikLabTest2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46027E3E1DA7E72B00D8A171 /* Debug */,
-				46027E3F1DA7E72B00D8A171 /* Release */,
+				4612BFB61DAE654A007DCA88 /* Debug */,
+				4612BFB71DAE654A007DCA88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 46027E2E1DA7E72B00D8A171 /* Project object */;
+	rootObject = 4612BFA61DAE654A007DCA88 /* Project object */;
 }
